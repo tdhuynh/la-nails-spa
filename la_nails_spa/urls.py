@@ -8,6 +8,6 @@ from main.views import IndexView, AboutView, ContactView
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', IndexView.as_view(), name='index_view'),
-    url(r'^about/$', AboutView.as_view(), name='about_view'),
-    url(r'^contact/$', ContactView.as_view(), name='contact_view')
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+    url(r'^about$', AboutView.as_view(), name='about_view'),
+    url(r'^contact$', ContactView.as_view(), name='contact_view')
+]
