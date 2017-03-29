@@ -12,3 +12,7 @@ class AboutView(TemplateView):
 
 class ContactView(TemplateView):
     template_name = 'contact.html'
+
+
+class ServicesView(TemplateView):
+    template_name = 'services.html'
